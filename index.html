@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" /><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="left">My Portfolio</div>
+      <div class="right">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <section id="home" class="section_home">
+    <img src="profile.jpg" alt="Rucha"
+     width="300" height="300" style="float:right" >
+    </img>
+    <br>
+    <br>
+    <br>
+    <h1>Hi,<br> I'm Rucha Katte</h1>
+    <p> Freshman @ PICT | Member of PASC</p>
+    <br>
+    <br>
+    </section>
+
+  <section id="about" class="section_about">
+    <br>
+    <br>
+    <br>
+    <h2>About Me</h2>
+    <p>I am a passionate & enthusiastic learner.<br> I take interest in problem solving & exploring new things.<br> 
+    My goal is to use technology to solve problems, make a real world impact & help those in need.</p>
+  </section>
+
+  
+  <section id="skills" class="section skills">
+    <h2>Skills</h2>
+    <div class="skill-list">
+      <div class="skill-card">
+        <h3>1.</h3>
+        <p>Communication Skills</p>
+      </div>
+      <div class="skill-card">
+        <h3>2.</h3>
+        <p>Programming languages: C, C++</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="hobbies" class="section hobbies">
+    <h2>Hobbies</h2>
+    <div class="hobby-list">
+      <div class="hobby-card">
+        <h3>1.</h3>
+        <p>Stargazing</p>
+      </div>
+      <div class="hobby-card">
+        <h3>2.</h3>
+        <p>Gardening</p>
+      </div>
+      <div class="hobby-card">
+        <h3>3.</h3>
+        <p>Solving Puzzles</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact</h2>
+    
+    <div id="contact-links">
+      <button onclick="contact('email')">Email</button>
+      <button onclick="contact('linkedin')">LinkedIn</button>
+      <button onclick="contact('github')">GitHub</button>
+    </div>
+    <br>
+    
+    
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rucha Katte. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
