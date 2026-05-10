@@ -179,7 +179,4 @@ document.getElementById('contactForm').addEventListener('submit', e => {
 });
 
 // ─── Resume Download ──────────────────────────────────────
-document.getElementById('resumeBtn').addEventListener('click', e => {
-  e.preventDefault();
-  alert('Resume download coming soon! Please connect via LinkedIn or Email.');
-});
+// Download is handled natively via the HTML `download` attribute on the link.
