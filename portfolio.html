@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rucha Katte | Portfolio</title>
+  <meta name="description" content="Rucha Katte – B.Tech IT student at PICT Pune. Software Developer, AI & ML Enthusiast, Google ELP Co-Lead, Open Source Contributor." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">RK</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
+
+<!-- Scroll Progress -->
+<div id="scroll-progress"></div>
+
+<!-- Custom Cursor -->
+<div id="cursor"></div>
+<div id="cursor-follower"></div>
+
+<!-- Navbar -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#home">RK</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#achievements" class="nav-link">Achievements</a></li>
+      <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <canvas id="particleCanvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="hero-greeting">👋 Hello, I'm</p>
+      <h1 class="hero-name">Rucha <span class="gradient-text">Katte</span></h1>
+      <div class="typewriter-wrap">I'm a <span id="typewriter"></span><span class="cursor-blink">|</span></div>
+      <p class="hero-bio">B.Tech Information Technology student at PICT Pune passionate about building impactful technology solutions across AI, web development, and scalable systems.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary"><i class="fas fa-code"></i> View Projects</a>
+        <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i> Contact Me</a>
+        <a href="#" class="btn btn-ghost" id="resumeBtn"><i class="fas fa-download"></i> Resume</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/RuchaKatte" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/rucha-katte-73167b314" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:ruchakatte@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-image-wrap">
+      <div class="hero-img-ring">
+        <img src="Rucha_photo.jpeg" alt="Rucha Katte" class="hero-img" />
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card"><div class="stat-num" data-count="9.69">0</div><div class="stat-label">CGPA</div></div>
+        <div class="stat-card"><div class="stat-num" data-count="4">0</div><div class="stat-label">Projects</div></div>
+        <div class="stat-card"><div class="stat-num" data-count="2">0</div><div class="stat-label">Hackathon Wins</div></div>
+        <div class="stat-card"><div class="stat-num os-contrib" data-count="50">0</div><div class="stat-label">OSS Contributions</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-down"><div class="scroll-wheel"></div><span>Scroll</span></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section about">
+  <div class="section-inner">
+    <div class="section-tag">About Me</div>
+    <h2 class="section-title">Who I <span class="gradient-text">Am</span></h2>
+    <div class="about-grid">
+        <div class="about-badges">
+          <span class="badge"><i class="fas fa-map-marker-alt"></i> Pune, India</span>
+          <span class="badge"><i class="fas fa-graduation-cap"></i> PICT Pune</span>
+          <span class="badge"><i class="fas fa-code-branch"></i> Open Source</span>
+        </div>
+      </div>
+      <div class="about-text-col reveal-right">
+        <p>I am a B.Tech Information Technology student at Pune Institute of Computer Technology (PICT) with a strong interest in software development, AI systems, machine learning, scalable applications, and problem solving.</p>
+        <p>I enjoy building real-world impactful projects across AI/ML, web development, and system-level applications. Along with technical development, I actively contribute to tech communities, open source initiatives, hackathons, and student leadership programs.</p>
+        <p>I believe in using technology to solve meaningful problems while continuously learning and growing as a developer and leader.</p>
+
+        <div class="edu-timeline">
+          <h3>Education</h3>
+          <div class="timeline-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <strong>PICT Pune</strong> — B.Tech Information Technology
+              <span class="tl-meta">2024 – 2028 &nbsp;|&nbsp; Minor in Finance</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <strong>Jadhavar Jr. College</strong> — HSC
+              <span class="tl-meta">Score: 86%</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <strong>Vision English Medium School</strong> — SSC
+              <span class="tl-meta">Score: 95.6%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section skills">
+  <div class="section-inner">
+    <div class="section-tag">Tech Stack</div>
+    <h2 class="section-title">Skills & <span class="gradient-text">Expertise</span></h2>
+    <div class="skills-grid">
+      <div class="skill-category reveal-up">
+        <h3><i class="fas fa-terminal"></i> Languages</h3>
+        <div class="skill-chips">
+          <span class="chip">C++</span><span class="chip">C</span><span class="chip">Python</span><span class="chip">Java</span>
+        </div>
+      </div>
+      <div class="skill-category reveal-up" style="--delay:0.1s">
+        <h3><i class="fas fa-brain"></i> Core CS</h3>
+        <div class="skill-chips">
+          <span class="chip">DSA</span><span class="chip">OOP</span><span class="chip">DBMS</span><span class="chip">Networks</span>
+        </div>
+      </div>
+      <div class="skill-category reveal-up" style="--delay:0.2s">
+        <h3><i class="fas fa-globe"></i> Web Dev</h3>
+        <div class="skill-chips">
+          <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">React.js</span><span class="chip">Node.js</span><span class="chip">Express.js</span>
+        </div>
+      </div>
+      <div class="skill-category reveal-up" style="--delay:0.3s">
+        <h3><i class="fas fa-robot"></i> AI / ML</h3>
+        <div class="skill-chips">
+          <span class="chip">Machine Learning</span><span class="chip">NLP</span><span class="chip">GenAI</span><span class="chip">CNNs</span>
+        </div>
+      </div>
+      <div class="skill-category reveal-up" style="--delay:0.4s">
+        <h3><i class="fas fa-tools"></i> Tools</h3>
+        <div class="skill-chips">
+          <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Figma</span><span class="chip">Postman</span><span class="chip">VS Code</span>
+        </div>
+      </div>
+    </div>
+    <!-- Marquee -->
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span>C++</span><span>Python</span><span>React</span><span>Node.js</span><span>Machine Learning</span><span>NLP</span><span>GenAI</span><span>CNNs</span><span>Git</span><span>Figma</span><span>JavaScript</span><span>DSA</span><span>DBMS</span>&nbsp;&nbsp;
+        <span>C++</span><span>Python</span><span>React</span><span>Node.js</span><span>Machine Learning</span><span>NLP</span><span>GenAI</span><span>CNNs</span><span>Git</span><span>Figma</span><span>JavaScript</span><span>DSA</span><span>DBMS</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section projects">
+  <div class="section-inner">
+    <div class="section-tag">My Work</div>
+    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+    <div class="projects-grid">
+
+      <div class="project-card reveal-up">
+        <div class="project-card-top">
+          <div class="project-icon"><i class="fas fa-comments"></i></div>
+          <div class="project-badges"><span class="proj-badge gold">EY Techathon Round 2</span></div>
+        </div>
+        <h3>AI Loan Sales Chatbot</h3>
+        <p>Conversational AI chatbot automating personal loan sales workflows using multi-agent architecture for eligibility checks, verification, and approval automation.</p>
+        <div class="project-stack"><span>Python</span><span>LLMs</span><span>Multi-Agent</span></div>
+        <ul class="project-features">
+          <li><i class="fas fa-check-circle"></i> Multi-agent workflow</li>
+          <li><i class="fas fa-check-circle"></i> Automated customer interaction</li>
+          <li><i class="fas fa-check-circle"></i> Structured loan approval</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/RuchaKatte" target="_blank" class="proj-btn"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up" style="--delay:0.1s">
+        <div class="project-card-top">
+          <div class="project-icon"><i class="fas fa-leaf"></i></div>
+        </div>
+        <h3>Carbon Emission Tracker</h3>
+        <p>Carbon footprint tracking and analysis platform with anomaly detection and blockchain-based secure record integrity for enterprise and government use.</p>
+        <div class="project-stack"><span>ML</span><span>Isolation Forest</span><span>Blockchain</span></div>
+        <ul class="project-features">
+          <li><i class="fas fa-check-circle"></i> Carbon anomaly detection</li>
+          <li><i class="fas fa-check-circle"></i> Blockchain integration</li>
+          <li><i class="fas fa-check-circle"></i> Enterprise use cases</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/RuchaKatte/Frontend-carbon_emission.git" target="_blank" class="proj-btn"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up" style="--delay:0.2s">
+        <div class="project-card-top">
+          <div class="project-icon"><i class="fas fa-pen-nib"></i></div>
+        </div>
+        <h3>Digit Classification (MNIST)</h3>
+        <p>Handwritten digit recognition system using CNNs with a browser-based real-time prediction interface and interactive canvas.</p>
+        <div class="project-stack"><span>CNN</span><span>Python</span><span>HTML Canvas</span></div>
+        <ul class="project-features">
+          <li><i class="fas fa-check-circle"></i> Real-time digit prediction</li>
+          <li><i class="fas fa-check-circle"></i> CNN-based classification</li>
+          <li><i class="fas fa-check-circle"></i> Interactive canvas UI</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/RuchaKatte" target="_blank" class="proj-btn"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up" style="--delay:0.3s">
+        <div class="project-card-top">
+          <div class="project-icon"><i class="fas fa-language"></i></div>
+          <div class="project-badges"><span class="proj-badge blue">IEEE TechRush Winner</span></div>
+        </div>
+        <h3>Language Learning App</h3>
+        <p>Gamified language learning platform with progress tracking, interactive UI, and engaging activities for an immersive learning experience.</p>
+        <div class="project-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <ul class="project-features">
+          <li><i class="fas fa-check-circle"></i> Gamified learning</li>
+          <li><i class="fas fa-check-circle"></i> Progress tracking</li>
+          <li><i class="fas fa-check-circle"></i> Interactive UI</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/RuchaKatte/orange.git" target="_blank" class="proj-btn"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section experience">
+  <div class="section-inner">
+    <div class="section-tag">Journey</div>
+    <h2 class="section-title">Experience & <span class="gradient-text">Leadership</span></h2>
+    <div class="exp-timeline">
+
+      <div class="exp-item reveal-up">
+        <div class="exp-dot"><i class="fab fa-google"></i></div>
+        <div class="exp-card">
+          <span class="exp-badge">Current</span>
+          <h3>Google ELP Pune Region — Co-Lead</h3>
+          <p>Co-leading the Google Educator Learning Program for the Pune region, driving tech education initiatives and community growth.</p>
+        </div>
+      </div>
+
+      <div class="exp-item reveal-up" style="--delay:0.1s">
+        <div class="exp-dot"><i class="fab fa-google"></i></div>
+        <div class="exp-card">
+          <h3>Google ELP PICT — Campus Lead</h3>
+          <p>Served as Campus Lead for Google ELP at PICT, initiated and actively involved in setting up the new tech club in college for both students and faculty members.</p>
+        </div>
+      </div>
+
+      <div class="exp-item reveal-up" style="--delay:0.2s">
+        <div class="exp-dot"><i class="fab fa-aws"></i></div>
+        <div class="exp-card">
+          <h3>AWS Cloud Research Intern</h3>
+          <p>Conducted research on cloud computing architectures and AWS services, contributing to scalability and performance analysis.</p>
+        </div>
+      </div>
+
+      <div class="exp-item reveal-up" style="--delay:0.3s">
+        <div class="exp-dot"><i class="fas fa-microphone"></i></div>
+        <div class="exp-card">
+          <h3>AWS Student Community Day — Host & Anchor</h3>
+          <p>Hosted and anchored the AWS Student Community Day event, facilitating sessions and networking for 200+ attendees.</p>
+        </div>
+      </div>
+
+      <div class="exp-item reveal-up" style="--delay:0.4s">
+        <div class="exp-dot"><i class="fas fa-chalkboard-teacher"></i></div>
+        <div class="exp-card">
+          <h3>Java & ML SIG Instructor</h3>
+          <p>Taught Java programming and Machine Learning concepts as a Special Interest Group instructor to junior students.</p>
+        </div>
+      </div>
+
+      <div class="exp-item reveal-up" style="--delay:0.5s">
+        <div class="exp-dot"><i class="fas fa-code-branch"></i></div>
+        <div class="exp-card">
+          <h3>Open Source Contributor — GSSoC & Hacktoberfest</h3>
+          <p>Active contributor in GirlScript Summer of Code and Hacktoberfest, contributing to multiple open source repositories.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="section achievements">
+  <div class="section-inner">
+    <div class="section-tag">Milestones</div>
+    <h2 class="section-title">Achievements & <span class="gradient-text">Recognition</span></h2>
+    <div class="ach-grid">
+      <div class="ach-card reveal-up">
+        <div class="ach-icon"><i class="fas fa-trophy"></i></div>
+        <h3>IEEE TechRush Winner</h3>
+        <p>Won IEEE TechRush hackathon with the Language Learning App project, recognised for innovation and execution.</p>
+      </div>
+      <div class="ach-card reveal-up" style="--delay:0.1s">
+        <div class="ach-icon"><i class="fas fa-medal"></i></div>
+        <h3>EY Techathon Round 2</h3>
+        <p>Shortlisted for Round 2 of EY Techathon for the AI Loan Sales Chatbot — a national-level competition.</p>
+      </div>
+      <div class="ach-card reveal-up" style="--delay:0.2s">
+        <div class="ach-icon"><i class="fas fa-star"></i></div>
+        <h3>PCCOE Indradhanu Grand Challenge</h3>
+        <p>International Grand Challenge Round 2 Shortlisted — recognized for impactful tech solution design.</p>
+      </div>
+      <div class="ach-card reveal-up" style="--delay:0.3s">
+        <div class="ach-icon"><i class="fab fa-google"></i></div>
+        <h3>Google ELP Pune Co-Lead</h3>
+        <p>Selected as Co-Lead for Google Educator Learning Program for the entire Pune region — a prestigious leadership role.</p>
+      </div>
+      <div class="ach-card reveal-up" style="--delay:0.4s">
+        <div class="ach-icon"><i class="fas fa-code-branch"></i></div>
+        <h3>GSSoC & Hacktoberfest</h3>
+        <p>Active open source contributor in GirlScript Summer of Code and Hacktoberfest with multiple merged PRs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <div class="section-inner">
+    <div class="section-tag">Get In Touch</div>
+    <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+    <p class="contact-subtitle">Let's build impactful technology together.</p>
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <a href="mailto:ruchakatte@gmail.com" class="contact-link"><i class="fas fa-envelope"></i><span>ruchakatte@gmail.com</span></a>
+        <a href="https://www.linkedin.com/in/rucha-katte-73167b314" target="_blank" class="contact-link"><i class="fab fa-linkedin-in"></i><span>linkedin.com/in/rucha-katte</span></a>
+        <a href="https://github.com/RuchaKatte" target="_blank" class="contact-link"><i class="fab fa-github"></i><span>github.com/RuchaKatte</span></a>
+      </div>
+      <form class="contact-form reveal-right" id="contactForm">
+        <div class="form-group">
+          <input type="text" id="contactName" placeholder="Your Name" required />
+          <label for="contactName">Your Name</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="contactEmail" placeholder="Your Email" required />
+          <label for="contactEmail">Your Email</label>
+        </div>
+        <div class="form-group">
+          <textarea id="contactMsg" rows="4" placeholder="Your Message" required></textarea>
+          <label for="contactMsg">Your Message</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p>&copy; 2025 Rucha Katte. Crafted with <span class="heart">♥</span> and lots of <span class="coffee">☕</span></p>
+    <div class="footer-socials">
+      <a href="https://github.com/RuchaKatte" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/rucha-katte-73167b314" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:ruchakatte@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
