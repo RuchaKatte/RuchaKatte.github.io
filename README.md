@@ -2,7 +2,7 @@
 
 Welcome to the repository of my personal portfolio website! This site showcases my background as a B.Tech Information Technology student at PICT Pune, along with my featured software engineering projects, leadership experiences, hackathon achievements, and open-source contributions.
 
-🔗 **Live Local Preview:** [http://localhost:8000](http://localhost:8000)
+🔗 **Live Local Preview:** [https://ruchakatte.github.io/]
 
 ---
 
